@@ -11,7 +11,7 @@ import com.wordnik.swagger.annotations.ApiOperation;
 @RequestMapping("/demoController")
 public class ControllerDemo {
 	@ResponseBody
-	@ApiOperation(value = "query api basic information",notes="this is notes")
+	@ApiOperation(value = "query api basic information ",notes="this is notes")
 	@RequestMapping("get")
 	public String get(@RequestParam("id") String id){
 		return "success"+id;
